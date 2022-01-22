@@ -22,7 +22,7 @@ function Header() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link to="/" className="nav-link active" aria-current="page">
-                Home
+                Acasa
               </Link>
             </li>
             
@@ -52,7 +52,7 @@ function Header() {
            
           </ul>
           <Link to="/reservation">
-          <button className="btn btn-outline-success">
+          <button className="btn btn-outline-primary">
               Rezerva o camera
             </button>
           </Link>

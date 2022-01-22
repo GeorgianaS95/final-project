@@ -11,8 +11,11 @@ import Contact from './components/contact/Contact';
 import Reservation from './components/reservation/Reservation';
 
 
+
 function App() {
   return (
+    <>
+    
   <div className="App">
     <BrowserRouter>
     <Header />
@@ -32,6 +35,7 @@ function App() {
     
 
   </div>
+  </>
   );
 }
 
