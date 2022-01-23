@@ -27,7 +27,7 @@ function App() {
         <Route path="/rooms/:roomId" element={<RoomDetails />}/>
         <Route path="/restaurant" element={<Restaurant />}/>
         <Route path="/contact" element={<Contact />}/>
-        <Route path="/reservation" element={<Reservation />}/>
+        <Route path="/reservation/:roomId" element={<Reservation />}/>
       </Routes>
 
       <Footer />

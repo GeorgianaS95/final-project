@@ -51,11 +51,11 @@ function Header() {
             
            
           </ul>
-          <Link to="/reservation">
+          {/* <Link to="/reservation">
           <button className="btn btn-outline-primary">
               Rezerva o camera
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
