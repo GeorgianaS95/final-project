@@ -1,25 +1,32 @@
 
-import { message } from 'antd';
-import { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
+
+
 import './Contact.css';
 
 
     function Contact() {
 
-        const [messages, setMessages] = useState([]);
-        useEffect(() => {
-            const oldMessages = localStorage.getItem("messageList");
-            if(!oldMessages) {
-                localStorage.setItem("messageList", JSON.stringify([]));
-            } else {
-                setMessages(JSON.parse(oldMessages));
-            }
-            
-        });
+        function submit(e) {
+            e.preventDefault();
+            const nume = e.target[0].value;
+            const prenume = e.target[1].value;
+            const telefon = e.target[2].value;
+            const email = e.target[3].value;
+            const message = e.target[4].value;
 
-        const newMessages = [message, ...messages];
-        localStorage.setItem("messageList", JSON.stringify(newMessages));
+            let messages = JSON.parse(localStorage.getItem("messageList") || "[]");
+            messages.push({
+                nume,
+                prenume,
+                telefon,
+                email,
+                message
+            });
+
+            localStorage.setItem("messageList", JSON.stringify(messages));
+        }
+        
+        
 
 
         const staff = [
@@ -68,7 +75,7 @@ import './Contact.css';
                  Ne puteți contacta pe email: reservation@oasishotel.ro, la telefon: +40 000 000 000, sau puteți utiliza formularul de contact de mai jos pentru întrebări sau solicitări.
              </p>
              <div className="container">
-                 <form id="contact-form">
+                 <form onSubmit = {submit} id="contact-form">
                      <div className="form-group">
                          <label htmlFor="name">Nume*</label>
                          <input type="text" className="form-control" />

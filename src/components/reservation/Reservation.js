@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Reservation.css";
 
 function Reservation() {
   const { roomId } = useParams();
+  const [message, setMessage] = useState("");
   
   function submit(e) {
     e.preventDefault();
@@ -26,13 +28,19 @@ function Reservation() {
          nrAdults,
          nrKids
       })
+      setMessage(`A reservation between ${startDate} and ${endDate} was created`);
+        setTimeout(() => {
+          setMessage("");
+        }, 4000); 
     } else {
       const existingReservation = roomReservations.find((currentReservation) => {
         if(startDate >= currentReservation.startDate && startDate <= currentReservation.endDate || endDate >= currentReservation.startDate && endDate <= currentReservation.endDate) {
           return true;
+          
         
         }
         return false;
+        
       })
       console.log(existingReservation);
       if(!existingReservation) {
@@ -42,7 +50,17 @@ function Reservation() {
           nrAdults,
           nrKids
        })
+       setMessage(`A reservation between ${startDate} and ${endDate} was created`);
+        setTimeout(() => {
+          setMessage("");
+        }, 4000);
+      } else {
+        setMessage(`In intervalul ${existingReservation.startDate} si ${existingReservation.endDate} exista deja o rezervare! Te rugam sa alegi o alta perioada.`);
+        setTimeout(() => {
+          setMessage("");
+        }, 6000); 
       }
+      
     }
 
 
@@ -80,8 +98,10 @@ function Reservation() {
           <option value="2">2</option>
         </select>
       </label>
-      <button type="submit">Verifica disponibilitate</button>
+      <button type="submit">Rezerva</button>
+     <div>{message}</div> 
     </form>
+
   );
 }
 
