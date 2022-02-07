@@ -3,10 +3,13 @@ import "./Homepage.css";
 import "../rooms/Rooms.js";
 
 
+
 function Homepage() {
     return (
 
         <>
+        <div style={{ backgroundImage: "url(/images/mainPhoto.jpg" }}>
+            </div>
         <div>
             <h2>Hotel Oasis *****</h2>
             <p>
