@@ -76,10 +76,11 @@ function RoomDetails() {
 
   return room ? (
     <div>
-      {room.name}
+      <div className="roomTitle"><h2>{room.name}</h2></div>
       <br></br>
-      <img src={room.image} />
-      <br></br> {room.description} <br></br> {room.price}
+      <img src={room.image} width="70%" height="70%" />
+      <br></br> 
+      <div className="roomDescription">{room.description}</div> <br></br> {room.price}
       <Link to={`/reservation/${roomId}`} className="btn btn-primary">
         Rezerva
       </Link>

@@ -3,6 +3,8 @@ import "./Header.css";
 
 function Header() {
   return (
+    <>
+    
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
@@ -18,6 +20,7 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        <img className="logoImage" src="/images/logo.jpg"></img>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -51,14 +54,10 @@ function Header() {
             
            
           </ul>
-          {/* <Link to="/reservation">
-          <button className="btn btn-outline-primary">
-              Rezerva o camera
-            </button>
-          </Link> */}
         </div>
       </div>
     </nav>
+    </>
   );
 }
 
