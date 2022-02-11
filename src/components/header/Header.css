@@ -1,6 +1,12 @@
 .logoImage {
     text-align: left;
-    width: 150px;
+    width: 110px;
     height: 100px;
+    
+}
+
+.nav-item {
+    padding: 15px;
+    font-weight: 15px;
 }
 

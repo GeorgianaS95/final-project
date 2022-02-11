@@ -1,0 +1,43 @@
+
+.main {
+    margin: 50px;
+    border: 100px;
+    padding: 100px;
+   
+}
+
+div.mainPhoto {
+    background: cover;
+    background: no-repeat;
+    background-position: center;
+    padding: 400px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.roomsButton {
+    background-color: rgb(0, 0, 246);
+    transition-duration: 0.8s;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    border-radius: 13px;
+    font-size: 20px;
+    font-weight: 50px;
+    
+}
+
+.roomsButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #000000;
+    border-radius: 13px;
+}
+
+.title {
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    text-decoration:underline;
+    position: absolute;
+}

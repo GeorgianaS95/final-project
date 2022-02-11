@@ -78,7 +78,7 @@ function RoomDetails() {
     <div>
       <div className="roomTitle"><h2>{room.name}</h2></div>
       <br></br>
-      <img src={room.image} width="70%" height="70%" />
+      <img src={room.image}  width="70%" height="70%"/>
       <br></br> 
       <div className="roomDescription">{room.description}</div> <br></br> {room.price}
       <Link to={`/reservation/${roomId}`} className="btn btn-primary">

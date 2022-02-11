@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
     
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
         </a>
@@ -20,7 +20,7 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <img className="logoImage" src="/images/logo.jpg"></img>
+        <img className="logoImage" src="/images/logo4.png"></img>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">

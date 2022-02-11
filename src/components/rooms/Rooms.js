@@ -72,7 +72,7 @@ function Rooms() {
           {rooms.map((room) => (
             <div className="col-4" key={room.id}>
               <div className="card">
-                <img src={room.image} width="100%" className="card-img-top" alt="..." />
+                <img src={room.image}  className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{room.name}</h5>
                   <p className="card-text">{room.description}</p>
