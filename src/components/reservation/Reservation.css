@@ -6,12 +6,15 @@ label {
     width: 400px;
     line-height: 26px;
     margin-bottom: 10px;
+    
   }
   
   input, select {
     height: 20px;
     flex: 0 0 200px;
     margin-left: 10px;
+    margin-bottom: 25px;
+    border: 1px solid black;
   }
 
   .reservationButton {
@@ -19,6 +22,11 @@ label {
     transition: 0.6s;
     width: 100px;
     height: 45px;
+    box-shadow: none;
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+    
   
   
     
@@ -26,38 +34,57 @@ label {
   }
 
   .reservationButton:hover {
-    background-color: white;
-    color: #0d6efd;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
     border: 0.5px solid black;
+    color: rgb(0, 0, 0);
   }
 
   .formReservation {
     
     margin: 100px;
-    width: 1000px;
-    height: 150px;
+    width: 1020px;
+    height: 250px;
     padding-top: 30px;
     padding-bottom: 50px;
     position: center;
-    background-color:lightblue;
+
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    
     
   }
 
-  .infoDate {
+  .infoDate, .guestsNr, .infoEmail, .infoName, .infoPhone {
     display: inline;
     margin-right: 10px;
+    color: rgb(0, 0, 0);
+    
   }
 
-  .guestsNr {
-    display: inline;
-    margin-right: 10px;
-  }
 
   .inputInfo {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(255, 255, 255);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    
+    color: rgb(0, 0, 0);
     height: 30px;
-    width: 150px;
+    width: 152px;
     margin-left: 10px;
   }
+
+
+  .infoDate, .inputInfo, .guestsNr, .infoName, .infoEmail, .infoPhone {
+    font-weight: bold;
+  }
+
+  .reservationTitle {
+    margin-top: 20px;
+  }
+
+  /* .reservationMsg {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+  } */

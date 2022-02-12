@@ -34,7 +34,7 @@ function Reservation() {
       );
       setTimeout(() => {
         setMessage("");
-        navigate('/thankYou');
+        navigate("/thankYou");
       }, 4000);
     } else {
       const existingReservation = roomReservations.find(
@@ -63,7 +63,7 @@ function Reservation() {
         );
         setTimeout(() => {
           setMessage("");
-          navigate('/thankYou');
+          navigate("/thankYou");
         }, 4000);
       } else {
         setMessage(
@@ -71,50 +71,85 @@ function Reservation() {
         );
         setTimeout(() => {
           setMessage("");
-        }, 6000);
+        }, 9000);
       }
     }
 
     reservations[roomId] = roomReservations;
     localStorage.setItem("reservations", JSON.stringify(reservations));
-    
   }
   return (
-    <div className="formReservation">
-    <form onSubmit={submit}>
-      <label className="infoDate">
-        Data sosirii
-        <input className="inputInfo" type="date"></input>
-      </label>
-      <label className="infoDate">
-        Data plecarii
-        <input className="inputInfo" type="date"></input>
-      </label>
-      <label className="guestsNr">
-        Nr. adulti
-        <select className="inputInfo" name="guests" id="guests-number-select">
-          <option value=""> </option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="2">3</option>
-          <option value="2">4</option>
-        </select>
-      </label>
-      <label className="guestsNr">
-        Nr. copii
-        <select className="inputInfo" name="guests" id="kids-number-select">
-          <option value=""> </option>
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-        </select>
-      </label>
-      
-      <button className="reservationButton btn-primary roomBtn roomButton" type="submit">Rezerva</button>
-      
-      <div>{message}</div>
-    </form>
-    </div>
+    <>
+      <div>
+        <h2 className="reservationTitle">Room Reservation</h2>
+      </div>
+      <div className="formReservation">
+        <form onSubmit={submit}>
+          <label className="infoDate">
+            Data sosirii
+            <input className="inputInfo" type="date"></input>
+          </label>
+          <label className="infoDate">
+            Data plecarii
+            <input className="inputInfo" type="date"></input>
+          </label>
+          <label className="guestsNr">
+            Nr. adulti
+            <select
+              className="inputInfo"
+              name="guests"
+              id="guests-number-select"
+            >
+              <option value=""> </option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="2">3</option>
+              <option value="2">4</option>
+            </select>
+          </label>
+          <label className="guestsNr">
+            Nr. copii
+            <select className="inputInfo" name="guests" id="kids-number-select">
+              <option value=""> </option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </label>
+          <label className="infoName">
+            Nume si prenume
+            <input className="inputInfo" type="text"></input>
+          </label>
+
+          <label className="infoEmail">
+            Email
+            <input className="inputInfo" type="email"></input>
+          </label>
+
+          <label className="infoPhone">
+            Telefon
+            <input className="inputInfo" type="text"></input>
+          </label>
+
+          <button
+            className="btn-primary roomBtn roomButton reservationButton"
+            type="submit"
+          >
+            Rezerva
+          </button>
+
+          {/* <div className="reservationMsg">{message}</div> */}
+
+          {/* <div className="alert alert-success" role="alert">
+            This is a success alert—check it out!
+          </div> */}
+
+          <div className="alert alert-danger" role="alert">
+            {message}
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
 

@@ -43,6 +43,7 @@ function Contact() {
   ];
   return (
     <>
+    <h2>Echipa noastra</h2>
       <div className="container">
         <div className="row">
           {staff.map((staffOne) => (
@@ -50,7 +51,7 @@ function Contact() {
               <div className="card">
                 <img src={staffOne.image} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">{staffOne.name}</h5>
+                  <h5 className="card-title staffName">{staffOne.name}</h5>
                   <p className="card-text">{staffOne.description}</p>
                 </div>
               </div>
@@ -59,35 +60,35 @@ function Contact() {
         </div>
       </div>
 
-      <h2>Formular de contact</h2>
-      <p>
-        Ne puteți contacta pe email: reservation@oasishotel.ro, la telefon: +40
-        000 000 000, sau puteți utiliza formularul de contact de mai jos pentru
-        întrebări sau solicitări.
+      <div className="delim"></div>
+
+      <h2 className="contactUs"> Contacteaza-ne</h2>
+      <p className="contactMessage">
+            Pentru solicitari sau intrebari va rugam sa completati formularul de mai jos. Hotel Oasis va folosi informațiile pe care le furnizați pe acest formular pentru a rămâne în contact cu dvs. Vom trata informațiile dvs. cu confidențialitate și nu le vom împărtăși altora.
       </p>
       <div className="container">
         <form onSubmit={submit} id="contact-form">
           <div className="form-group">
-            <label htmlFor="name">Nume*</label>
-            <input type="text" className="form-control" />
-            <label htmlFor="firstName">Prenume*</label>
-            <input type="text" className="form-control" />
-            <label htmlFor="phone">Telefon*</label>
-            <input type="text" className="form-control" />
+            <label className="labelDescription" htmlFor="name">Nume*</label>
+            <input type="text" className="form-control inputTxt" />
+            <label className="labelDescription" htmlFor="firstName">Prenume*</label>
+            <input type="text" className="form-control inputTxt" />
+            <label className="labelDescription" htmlFor="phone">Telefon*</label>
+            <input type="text" className="form-control inputTxt" />
           </div>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1">E-mail*</label>
+            <label className="labelDescription" htmlFor="exampleInputEmail1">E-mail*</label>
             <input
               type="email"
-              className="form-control"
+              className="form-control inputTxt"
               aria-describedby="emailHelp"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Mesaj</label>
-            <textarea className="form-control" rows="5"></textarea>
+            <label className="labelDescription" htmlFor="message">Mesaj</label>
+            <textarea className="form-control inputTxt" rows="5"></textarea>
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary formMessageButton">
             Trimite mesajul
           </button>
         </form>
