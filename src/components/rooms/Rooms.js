@@ -74,9 +74,11 @@ function Rooms() {
               <div className="card">
                 <img src={room.image}  className="card-img-top" alt="..." />
                 <div className="card-body">
+                  <div>
                   <h5 className="card-title">{room.name}</h5>
                   <p className="card-text">{room.description}</p>
-                  <Link to={`/rooms/${room.id}`} className="btn btn-primary">
+                  </div>
+                  <Link to={`/rooms/${room.id}`} className="btn btn-primary roomBtn">
                     Vezi detalii
                   </Link>
                   <br></br>

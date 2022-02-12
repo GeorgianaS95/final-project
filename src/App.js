@@ -9,6 +9,7 @@ import Facilities from './components/facilities/Facilities';
 import Restaurant from "./components/restaurant/Restaurant";
 import Contact from './components/contact/Contact';
 import Reservation from './components/reservation/Reservation';
+import ThankYou from './components/reservation/ThankYou';
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/restaurant" element={<Restaurant />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/reservation/:roomId" element={<Reservation />}/>
+        <Route path='/thankYou' element={<ThankYou />}/>
       </Routes>
 
       <Footer />

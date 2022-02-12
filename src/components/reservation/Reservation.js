@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./Reservation.css";
 
 function Reservation() {
   const { roomId } = useParams();
   const [message, setMessage] = useState("");
+  const navigate = useNavigate();
 
   function submit(e) {
     e.preventDefault();
@@ -33,6 +34,7 @@ function Reservation() {
       );
       setTimeout(() => {
         setMessage("");
+        navigate('/thankYou');
       }, 4000);
     } else {
       const existingReservation = roomReservations.find(
@@ -61,6 +63,7 @@ function Reservation() {
         );
         setTimeout(() => {
           setMessage("");
+          navigate('/thankYou');
         }, 4000);
       } else {
         setMessage(
@@ -74,20 +77,22 @@ function Reservation() {
 
     reservations[roomId] = roomReservations;
     localStorage.setItem("reservations", JSON.stringify(reservations));
+    
   }
   return (
+    <div className="formReservation">
     <form onSubmit={submit}>
-      <label>
+      <label className="infoDate">
         Data sosirii
-        <input type="date"></input>
+        <input className="inputInfo" type="date"></input>
       </label>
-      <label>
+      <label className="infoDate">
         Data plecarii
-        <input type="date"></input>
+        <input className="inputInfo" type="date"></input>
       </label>
-      <label>
+      <label className="guestsNr">
         Nr. adulti
-        <select name="guests" id="guests-number-select">
+        <select className="inputInfo" name="guests" id="guests-number-select">
           <option value=""> </option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -95,18 +100,21 @@ function Reservation() {
           <option value="2">4</option>
         </select>
       </label>
-      <label>
+      <label className="guestsNr">
         Nr. copii
-        <select name="guests" id="kids-number-select">
+        <select className="inputInfo" name="guests" id="kids-number-select">
           <option value=""> </option>
           <option value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
         </select>
       </label>
-      <button type="submit">Rezerva</button>
+      
+      <button className="reservationButton btn-primary" type="submit">Rezerva</button>
+      
       <div>{message}</div>
     </form>
+    </div>
   );
 }
 

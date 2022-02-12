@@ -1,0 +1,30 @@
+.getSocial {
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+.footer {
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+
+}
+
+.footerLogoImage {
+    display: block;
+    height: 270px;
+    margin-left: 40%;   
+}
+
+.locationLogoImage {
+    height: 80px;
+    
+    
+}
+
+.messageLogoImage {
+    height: 80px;
+}
+
+.phoneLogoImage {
+    height: 65px;
+}
