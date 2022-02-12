@@ -110,7 +110,7 @@ function Reservation() {
         </select>
       </label>
       
-      <button className="reservationButton btn-primary" type="submit">Rezerva</button>
+      <button className="reservationButton btn-primary roomBtn roomButton" type="submit">Rezerva</button>
       
       <div>{message}</div>
     </form>

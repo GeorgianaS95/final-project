@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
     
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark menu">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
         </a>

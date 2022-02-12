@@ -67,6 +67,7 @@ function Rooms() {
 
   return (
     <>
+    <div className="roomsBody">
       <div className="container">
         <div className="row">
           {rooms.map((room) => (
@@ -79,7 +80,7 @@ function Rooms() {
                   <p className="card-text">{room.description}</p>
                   </div>
                   <Link to={`/rooms/${room.id}`} className="btn btn-primary roomBtn">
-                    Vezi detalii
+                    Vizualizeaza
                   </Link>
                   <br></br>
                   
@@ -88,6 +89,7 @@ function Rooms() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </>
   );

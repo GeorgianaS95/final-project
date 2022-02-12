@@ -7,14 +7,30 @@ function Footer() {
         GET SOCIAL
         <img className="footerLogoImage" src="/images/fbLogo.png"></img>
       </div>
-      <div className="footer">
-        TERMS AND CONDITIONS / PRIVACY POLICY / SITEMAP NACP - National
-        Authority for Consumer Protection
-        <img className="locationLogoImage" src="/images/locationLogo.png"></img>
-        <img className="phoneLogoImage" src="/images/phoneLogo.png"></img>
-        <img className="messageLogoImage" src="/images/messageLogo.png"></img>
+      
+      <div className="container-footer">
+        <div className="row">
+        
+          <div className="col-sm">
+          <img
+            className="locationLogoImage"
+            src="/images/locationLogo.jpg"
+          ></img>
+            Bulevardul Mamaia Nr. 316 GPS: 44°21'7" N 28°63'69" E
+          </div>
+          
+          <div className="col-sm">
+          <img className="phoneLogoImage" src="/images/phoneLogo.png"></img>
+            +40 241 831 404</div>
+          
+          <div className="col-sm">
+          <img className="messageLogoImage" src="/images/messageLogo.png"></img>
+          evenimente@hoteloasis.ro
+          </div>
+          
+        </div>
       </div>
-      ;
+      
     </>
   );
 }

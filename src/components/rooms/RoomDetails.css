@@ -7,7 +7,45 @@
     
 }
 
-.reservationBtn {
+
+
+.roomPhotoDetails {
+    border-radius: 25px;
+}
+
+.roomTitle {
+    margin-top: 20px;
+}
+
+.roomButton {
     display: block;
-    
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    margin-left: 50%;
+}
+
+.roomButton:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+    -webkit-box-shadow: -7px -7px 32px 14px rgba(0,0,0,0.6); 
+    box-shadow: -7px -7px 32px 14px rgba(0,0,0,0.6);
+    height: 50px;
+    border: 1px solid black;
+} 
+
+.price {
+    margin-top: 50px;
+}
+
+
+
+.roomPresentation {
+    margin-bottom: 100px;
+}
+
+
+
+.colRoom {
+    border-right: 1px solid black;
 }

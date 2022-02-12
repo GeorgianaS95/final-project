@@ -22,7 +22,7 @@ function RoomDetails() {
       id: 2,
       name: "Camera Deluxe",
       description:
-        "Camerele deluxe oferă un spațiu mai generos, fiind potrivite atât pentru un sejur în scop de afaceri cât și pentru călătoriile de relaxare. Ele sunt alegerea perfectă pentru cei ce caută cazare în centrul Bucureștiului!În camerele deluxe te poți bucura de o zonă de relaxare și una de lucru, iar dintre facilitățile camerei enumerăm: aer condiționat, facilități pentru ceai sau cafea,  minibar, WiFi gratuit. Baia  cu pereți de sticlă este prevăzută cu cadă, iar unele camere deluxe au și duș",
+        "Camerele deluxe oferă un spațiu mai generos, fiind potrivite atât pentru un sejur în scop de afaceri cât și pentru călătoriile de relaxare. Ele sunt alegerea perfectă pentru cei ce caută cazare în centrul Bucureștiului! În camerele deluxe te poți bucura de o zonă de relaxare și una de lucru, iar dintre facilitățile camerei enumerăm: aer condiționat, facilități pentru ceai sau cafea,  minibar, WiFi gratuit. Baia  cu pereți de sticlă este prevăzută cu cadă, iar unele camere deluxe au și duș",
       image: "/images/cameraDeluxe.jpg",
       price: '$180/noapte',
       maxNrOfAdults:2,
@@ -75,19 +75,30 @@ function RoomDetails() {
   }, [roomId]);
 
   return room ? (
-    <div>
+    <div className="roomPresentation">
       <div className="roomTitle"><h2>{room.name}</h2></div>
       <br></br>
-      <img src={room.image}  width="70%" height="70%"/>
+      <img className="roomPhotoDetails" src={room.image}  width="70%" height="70%"/>
       <br></br> 
-      <div className="roomDescription">{room.description}</div> <br></br> {room.price}
-      <Link to={`/reservation/${roomId}`} className="reservationBtn btn btn-primary">
-        Rezerva
-      </Link>
-      <p>
+      <div className="row rowRoom">
+    <div className="col colRoom">
+      {room.description}
+    </div>
+    
+    <div className="col-md-auto price">
+      {room.price}
+    </div>
+    <div className="col col-lg-2">
         Check in: 15:00 - 19:0
         Check out: 10:00
-      </p>
+    </div>
+    
+  </div>
+      
+      <Link to={`/reservation/${roomId}`} className="btn btn-primary roomBtn roomButton">
+        Rezerva acum
+      </Link>
+      
     </div>
   ) : (
     <div>Not found</div>

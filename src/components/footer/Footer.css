@@ -1,12 +1,17 @@
 .getSocial {
     background-color: black;
     color: white;
-    height: 300px;
+    height: 320px;
+    padding-top: 20px;
+    font-weight: bold;
+    border-top: 2px solid white ;
 }
-.footer {
-    background-color: rgb(255, 255, 255);
-    height: 250px;
-
+.container-footer {
+    background-color: black;
+    padding-top: 20px;
+    height: 200px;
+    border-top:2px solid rgb(255, 255, 255);
+    color: white;
 }
 
 .footerLogoImage {
@@ -16,15 +21,20 @@
 }
 
 .locationLogoImage {
-    height: 80px;
+    height: 60px;
+    width: 70px;
+   
     
     
 }
 
 .messageLogoImage {
-    height: 80px;
+    height: 70px;
+    width: 70px;
 }
 
 .phoneLogoImage {
-    height: 65px;
+    height: 60px;
+    width: 70px;
 }
+
