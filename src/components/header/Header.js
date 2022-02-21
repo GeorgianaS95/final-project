@@ -54,6 +54,9 @@ function Header() {
             
            
           </ul>
+          <div className="col-sm" style={{color:"white"}}>
+          <img  className="phoneLogoImage" src="/images/phoneLogo.png"></img>
+            +40 241 831 404</div>
         </div>
       </div>
     </nav>

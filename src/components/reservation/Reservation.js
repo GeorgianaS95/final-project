@@ -4,7 +4,7 @@ import "./Reservation.css";
 
 function Reservation() {
   const { roomId } = useParams();
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState({error:"", success:""});
   const navigate = useNavigate();
 
   function submit(e) {
@@ -13,7 +13,10 @@ function Reservation() {
     const endDate = e.target[1].value;
     const nrAdults = Number(e.target[2].value);
     const nrKids = Number(e.target[3].value);
-    console.log(startDate, endDate, nrAdults, nrKids);
+    const name = e.target[4].value;
+    const email = e.target[5].value;
+    const phone = e.target[6].value;
+    console.log(startDate, endDate, nrAdults, nrKids, name, email, phone);
 
     const reservations = JSON.parse(
       localStorage.getItem("reservations") || "{}"
@@ -28,12 +31,15 @@ function Reservation() {
         endDate,
         nrAdults,
         nrKids,
+        name,
+        email,
+        phone
       });
       setMessage(
-        `A reservation between ${startDate} and ${endDate} was created`
+        {error:"", success:`O rezervare intre ${startDate} si ${endDate} a fost creata cu succes.`}
       );
       setTimeout(() => {
-        setMessage("");
+        setMessage({error:"", success:""});
         navigate("/thankYou");
       }, 4000);
     } else {
@@ -57,21 +63,24 @@ function Reservation() {
           endDate,
           nrAdults,
           nrKids,
+          name,
+          email,
+          phone
         });
         setMessage(
-          `O rezervare intre ${startDate} si ${endDate} a fost creata cu succes.`
+          {error:"", success:`O rezervare intre ${startDate} si ${endDate} a fost creata cu succes.`}
         );
         setTimeout(() => {
-          setMessage("");
+          setMessage({error:"", success:""});
           navigate("/thankYou");
         }, 4000);
       } else {
         setMessage(
-          `In intervalul ${existingReservation.startDate} si ${existingReservation.endDate} exista deja o rezervare! Te rugam sa alegi o alta perioada.`
+         {error: `In intervalul ${existingReservation.startDate} si ${existingReservation.endDate} exista deja o rezervare! Te rugam sa alegi o alta perioada.`, success:""}
         );
         setTimeout(() => {
-          setMessage("");
-        }, 9000);
+          setMessage({error:"", success:""});
+        }, 4000);
       }
     }
 
@@ -138,15 +147,15 @@ function Reservation() {
             Rezerva
           </button>
 
-          {/* <div className="reservationMsg">{message}</div> */}
+        
 
-          {/* <div className="alert alert-success" role="alert">
-            This is a success alert—check it out!
-          </div> */}
+          {message.success&& <div className="alert alert-success" role="alert">
+            {message.success}
+          </div> }
 
-          <div className="alert alert-danger" role="alert">
-            {message}
-          </div>
+         {message.error&& <div className="alert alert-danger" role="alert">
+            {message.error}
+          </div>}
         </form>
       </div>
     </>

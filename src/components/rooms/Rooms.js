@@ -67,6 +67,7 @@ function Rooms() {
 
   return (
     <>
+    <h2 className="roomsTitle">Camere & Tarife</h2>
     <div className="roomsBody">
       <div className="container">
         <div className="row">
@@ -78,11 +79,15 @@ function Rooms() {
                   <div>
                   <h5 className="card-title">{room.name}</h5>
                   <p className="card-text">{room.description}</p>
+                  
                   </div>
+                  <div style={{marginTop:"auto"}}>
+                  <p className="card-text parPrice">{room.price}</p>
                   <Link to={`/rooms/${room.id}`} className="btn btn-primary roomBtn">
                     Vizualizeaza
                   </Link>
-                  <br></br>
+                  </div>
+                 
                   
                 </div>
               </div>

@@ -16,7 +16,7 @@ function Footer() {
             className="locationLogoImage"
             src="/images/locationLogo.jpg"
           ></img>
-            Bulevardul Mamaia Nr. 316 GPS: 44°21'7" N 28°63'69" E
+            Bulevardul Bucuresti Nr. 316 GPS: 44°21'7" N 28°63'69" E
           </div>
           
           <div className="col-sm">

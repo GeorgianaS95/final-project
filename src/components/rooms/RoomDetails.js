@@ -75,34 +75,39 @@ function RoomDetails() {
   }, [roomId]);
 
   return room ? (
+    <>
     <div className="roomPresentation">
       <div className="roomTitle"><h2>{room.name}</h2></div>
-      <br></br>
+      
       <img className="roomPhotoDetails" src={room.image}  width="70%" height="70%"/>
-      <br></br> 
-      <div className="row rowRoom">
-    <div className="col colRoom">
+     
+      
+    <div className="descrip">
       {room.description}
     </div>
     
-    <div className="col-md-auto price">
-      {room.price}
-    </div>
-    <div className="col col-lg-2">
+
+    <div className="checkInOut">
         Check in: 15:00 - 19:0
         Check out: 10:00
     </div>
     
-  </div>
+  
       
+      
+      
+    </div>
+    <div className="divButton">
       <Link to={`/reservation/${roomId}`} className="btn btn-primary roomBtn roomButton">
         Rezerva acum
       </Link>
-      
     </div>
+    </>
   ) : (
     <div>Not found</div>
+    
   );
+
 }
 
 export default RoomDetails;

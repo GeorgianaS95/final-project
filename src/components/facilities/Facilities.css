@@ -1,0 +1,15 @@
+.servicesTitle {
+    margin-top: 20px;
+}
+
+.facilitiesMenu, .facilitiesMenu:focus {
+    border: 1px solid black;
+    box-shadow: 2px 2px 20px 5px black;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.servicesMenu {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}

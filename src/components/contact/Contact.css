@@ -1,6 +1,6 @@
 .labelDescription {
     font-weight: bold;
-   text-align: center;
+   padding-left: 50px;
 }
 .inputTxt {
     display: inline;
@@ -9,10 +9,13 @@
     color: black;
     height: 30px;
     box-shadow: 15px  15px 15px 15px #efefef;
+    display: inline;
 }
 
 .contactMessage {
     margin: 35px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #contact-form {
@@ -21,11 +24,12 @@
     padding: 5px;
 }
 
-.formMessageButton {
+.formMessageButton, .formMessageButton:focus {
     background-color: black;
     border: 1px solid black;
     height: 40px;
     margin-top: 20px;
+    border: black;
 
 }
 
@@ -33,19 +37,29 @@
     box-shadow: none;
     height: 40px;
     background-color: green;
+    border-color: green;
   
 }
 
 .staffName {
-    margin-top: 5px;
+    margin-top: none;
+}
+
+.divStaff {
+    height: 100px;
 }
 
 .delim {
+    margin-top: 50px;
     border: 1px solid black;
     height: 10px;
     background-color: black;
 }
 
 .contactUs {
+    margin-top: 20px;
+}
+
+.ourTeam {
     margin-top: 20px;
 }

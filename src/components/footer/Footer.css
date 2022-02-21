@@ -17,12 +17,14 @@
 .footerLogoImage {
     display: block;
     height: 270px;
-    margin-left: 40%;   
+    margin-left: 40%;
+    cursor: pointer;   
 }
 
 .locationLogoImage {
     height: 60px;
     width: 70px;
+    cursor: pointer;
    
     
     
@@ -31,10 +33,12 @@
 .messageLogoImage {
     height: 70px;
     width: 70px;
+    cursor: pointer;
 }
 
 .phoneLogoImage {
     height: 60px;
     width: 70px;
+    cursor: pointer;
 }
 

@@ -15,14 +15,16 @@
 
 .roomTitle {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .roomButton {
     display: block;
-    margin: 20px;
+    margin: 30px;
     width: 150px;
     height: 50px;
-    margin-left: 50%;
+    margin-left: 45%;
+
 }
 
 .roomButton:hover {
@@ -34,18 +36,25 @@
     border: 1px solid black;
 } 
 
-.price {
-    margin-top: 50px;
+.descrip {
+    margin-top: 20px;
+    margin-left: 10px;
 }
+
+.checkInOut {
+    margin-top: 20px;
+}
+
 
 
 
 .roomPresentation {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.divButton {
+    margin-bottom: 90px;
 }
 
 
 
-.colRoom {
-    border-right: 1px solid black;
-}

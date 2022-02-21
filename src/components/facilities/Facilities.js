@@ -3,17 +3,17 @@ import './Facilities.css';
 function Facilities() {
     return (
         <>
-            <h2>Servicii și facilități</h2>
+            <h2 className='servicesTitle'>Servicii și facilități</h2>
 
             <div className='alert alert-secondary container' role="alert">
                 În această perioadă, am luat toate măsurile pentru siguranța sănătății dumneavoastră și a colegilor noștri. Din acest motiv o parte din serviciile noastre nu sunt disponibile sau sunt disponibile cu acces limitat. Vezi <a href="#">Măsurile de securitate și prevenție împotriva răspândirii Coronavirus Covid19</a>
 
             </div>
 
-            <div className="accordion accordion-flush container" id="accordionFlushExample">
+            <div className="accordion accordion-flush container servicesMenu" id="accordionFlushExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingOne">
-                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <button className="accordion-button collapsed facilitiesMenu" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             Parcare
                         </button>
                     </h2>
@@ -25,7 +25,7 @@ function Facilities() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingTwo">
-                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <button className="accordion-button collapsed facilitiesMenu" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             Wi-fi gratuit
                         </button>
                     </h2>
@@ -36,7 +36,7 @@ function Facilities() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingThree">
-                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <button className="accordion-button collapsed facilitiesMenu" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                             Room Service 24h
                         </button>
                     </h2>
@@ -46,7 +46,7 @@ function Facilities() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingFour">
-                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <button className="accordion-button collapsed facilitiesMenu" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                             Facilitati fara plata
                         </button>
                     </h2>
@@ -68,7 +68,7 @@ function Facilities() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingFive">
-                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        <button className="accordion-button collapsed facilitiesMenu" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                             Facilitati cu plata
                         </button>
                     </h2>
