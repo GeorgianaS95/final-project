@@ -12,7 +12,7 @@ function Contact() {
     let email = e.target[3].value;
     let message = e.target[4].value;
 
-    let messages = JSON.parse(localStorage.getItem("messageList") || "[]");
+    let messages = JSON.parse(localStorage.getItem("messagesList") || "[]");
     messages.push({
       nume,
       prenume,
@@ -28,7 +28,7 @@ function Contact() {
     
     document.getElementById("contact-form").reset();
 
-    localStorage.setItem("messageList", JSON.stringify(messages));
+    localStorage.setItem("messagesList", JSON.stringify(messages));
   }
 
   const staff = [
