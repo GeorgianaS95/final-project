@@ -52,7 +52,7 @@ function Facilities() {
                     </h2>
                     <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body">
-                            <ul>
+                            <ul className='facilitiesList'>
                                 <li>Aer condiționat</li>
                                 <li>Bancomat</li>
                                 <li>Business corner</li>
@@ -74,7 +74,7 @@ function Facilities() {
                     </h2>
                     <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body">
-                        <ul>
+                        <ul className='facilitiesList'>
                                 <li>Cafenea</li>
                                 <li>Catering</li>
                                 <li>Copiator</li>

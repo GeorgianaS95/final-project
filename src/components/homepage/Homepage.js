@@ -25,7 +25,7 @@ function Homepage() {
         </h2>
 
         <div className="row">
-          <div className="col col1">
+          <div className="col">
             Situat în centrul orașului, Hotel Oasis, face parte din cel mai
             modern ansamblu urbanisitic din Bucuresti, și este cea mai elegantă
             locație pentru business, evenimente și relaxare din oraș. Situat în
@@ -34,7 +34,7 @@ function Homepage() {
             numeroasele premii dobândite, precum „TripAdvisor Traveler’s Choice
             Award”, „Certificate of Excellence” și „Top Hotel Awards”.
           </div>
-          <div className="col col2">
+          <div className="col">
             Localizarea centrală, proximitatea față de principalele atracții
             turistice și culturale, serviciile moderne de cazare, cu acces la
             centrul Spa, sala de fitness, piscina interioară, Jacuzzi-ul, sauna,
@@ -42,7 +42,7 @@ function Homepage() {
             care Hotelul Oasis le oferă.
           </div>
           <div className="w-100"></div>
-          <div className="col col3">
+          <div className="col">
             Dacă ați intrat în spiritul Bucureștiului de altădată, vă propunem
             să continuați această stare. Cum? Plimbându-vă prin cartierul
             Cotroceni. Veți descoperi străduțe liniștite și case frumoase, cu
@@ -50,7 +50,7 @@ function Homepage() {
             restaurantele și cafenelele cartierului. Dar și produsele micilor
             afaceri din Cotroceni.
           </div>
-          <div className="col col4">
+          <div className="col">
             Indiferent de anotimp, in Bucuresti nu va veti plictisi nici o
             clipa… culturi imbinate original, trecut glorios reflectat prin
             edificii istorice si culturale, modernism scos la iveala de

@@ -1,6 +1,11 @@
 .labelDescription {
     font-weight: bold;
-   padding-left: 50px;
+    
+   
+}
+
+.label {
+    display: block;
 }
 .inputTxt {
     display: inline;
@@ -18,11 +23,7 @@
     font-size: 20px;
 }
 
-#contact-form {
-   
-    margin: 10px;
-    padding: 5px;
-}
+
 
 .formMessageButton, .formMessageButton:focus {
     background-color: black;

@@ -84,14 +84,7 @@ body {
     border-top: 1px solid rgb(0, 0, 0);
 }
 
-.col1, .col2 {
-    border-left: 2px solid black;
-}
 
-.col3, .col4 {
-    border-top: 2px solid black;
-    padding-top: 15px;
-}
 
 
 
