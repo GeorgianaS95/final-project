@@ -88,7 +88,7 @@ function RoomDetails() {
     
 
     <div className="checkInOut">
-        Check in: 15:00 - 19:0
+        Check in: 15:00 - 19:00
         Check out: 10:00
     </div>
     
